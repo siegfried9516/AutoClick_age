@@ -15,9 +15,6 @@
 
     var checkExist = setInterval(function() {
         var confirmButton = document.querySelector(confirmButtonSelector);
-        if (confirmButton) {
-            confirmButton.click();
-            clearInterval(checkExist);
-        }
+        if (confirmButton){ confirmButton.click(); }
     }, 500); // 每500毫秒檢查一次按鈕是否存在
 })();
